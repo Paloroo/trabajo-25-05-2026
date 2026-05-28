@@ -18,3 +18,21 @@ for i in range(cant_vehiculos):
              if len(placa_auto) >= 6 and " " not in placa_auto:
                  print("Su placa es valida.")
                  break
+             else:
+                 print("Error deben ser 6 caracteres para la placa y no debe tener espacios.")
+
+while True:
+    try:
+        Capacidad = int(input("Ingrese la cantidad de carga (en toneladas): "))
+        if Capacidad > 0:
+            break
+        else:
+            print("¡Error logistico! Ingresa un numero positivo para la capacidad de carga.")
+    except ValueError: 
+        print("¡Error logistico! Ingresa un número entero positivo para la capacidad de carga.")
+        if Capacidad > 55:
+            vehiculos_ligero += 1
+        else:
+            vehiculos_pesados += 1
+
+print(f"\n¡La flota cuenta con {vehiculos_pesados} vehiculos pesados y {vehiculos_ligero} vehiculos ligeros! ¡Rutas asignadas!")            
