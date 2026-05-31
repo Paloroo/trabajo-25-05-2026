@@ -56,7 +56,7 @@ ciudades = {
     "chile":"santiago",
     "uruguay":"buenos aires",
     "brasil":"brasilia",
-    "paraguay":"asunción",
+    "paraguay":"monte video",
     "ecuador":"quito",
     "colombia":"bogota",
     "bolivia":"sucre",
