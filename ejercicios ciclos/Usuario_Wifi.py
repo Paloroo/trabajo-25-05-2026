@@ -23,3 +23,10 @@ for i in range(cantidad):
         else:
             break
         
+    while True:
+        try:
+                horas = float(input(f"¿Cuántas horas se conecto el el usuario {nombre}?: "))
+                if horas >= 0:
+                    break
+        except:            
+            print("¡Erro! lo que debe contener es un numero entero y no puede ser reemplazado por un caracter.")
